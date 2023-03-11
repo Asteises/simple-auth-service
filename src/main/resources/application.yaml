@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/picker-auth-db
+    url: jdbc:postgresql://localhost:5432/simple-auth-db
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
