@@ -2,11 +2,14 @@ package ru.asteises.simpleauthservice.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import ru.asteises.simpleauthservice.model.User;
 import ru.asteises.simpleauthservice.model.dto.UserRegDto;
 import ru.asteises.simpleauthservice.model.dto.UserViewDto;
 import ru.asteises.simpleauthservice.repositoryes.UserRepository;
+
 
 @Slf4j
 @Service
