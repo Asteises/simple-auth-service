@@ -19,18 +19,18 @@ public class UserService {
     public UserViewDto registration(UserRegDto userRegDto) {
 
         User user = new User();
-        user.setLogin(userRegDto.getLogin());
-        user.setFirstname(userRegDto.getFirstname());
-        user.setLastname(userRegDto.getLastname());
+//        user.setLogin(userRegDto.getLogin());
+//        user.setFirstname(userRegDto.getFirstname());
+//        user.setLastname(userRegDto.getLastname());
         user.setPassword(userRegDto.getPassword());
 
         user = userRepository.save(user);
 
         UserViewDto userViewDto = new UserViewDto();
         userViewDto.setId(user.getId());
-        userViewDto.setFirstname(user.getFirstname());
-        userViewDto.setLastname(user.getLastname());
-        userViewDto.setLogin(user.getLogin());
+//        userViewDto.setFirstname(user.getFirstname());
+//        userViewDto.setLastname(user.getLastname());
+//        userViewDto.setLogin(user.getLogin());
 
         log.info("User save in DB: {}", user);
 

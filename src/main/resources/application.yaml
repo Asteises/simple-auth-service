@@ -15,3 +15,8 @@ spring:
   liquibase:
     enabled: true
     change-log: 'classpath:db/changelog/changelog-master.yml'
+
+# rsa keys
+rsa:
+  private-key: 'classpath:certs/private.pem'
+  public-key: 'classpath:certs/public.pem'
